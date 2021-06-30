@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Javascript Fundamentals</title>
+	</head>
+	<body>
+		<h1>Javascript Fundamentals</h1>
+		<!-- Strings -->
+		<button>Press me</button>
+		<script>
+
+			// Declare variable with no value
+			let message;
+			
+			// Assign value to an existing variable
+			message = "Hello World!";
+			
+			// Create variable with default value
+			let name = "John";
+			let numberA = 5;
+			let numberB = 10;
+
+			// Create multiple variables
+			let age = 25,
+				lastName = "Smith";
+			
+			// Constants
+			const myBirthday = '16-03-1973';
+			const COLOR_RED = '#F00';
+			let color = COLOR_RED;
+
+			// Excersises
+			console.log(message);
+			console.log(name + ' ' + lastName + ', ' + age + ' y/o');
+			console.log(numberA + numberB);
+			console.log(7 * numberA);
+			let newNumber = 8 * numberB;
+			console.log(newNumber);
+			let modNumber = 77 % numberB;
+			console.log(modNumber);
+
+			// Strings
+			let string1 = "Hello, ";
+			let string2 = "how are you?";
+			let joined = string1 + string2;
+			console.log(joined);
+
+			const button = document.querySelector('button');
+			button.onclick = function() {
+				let name = prompt('What is your name?');
+				alert('Hello ' + name + ', nice to see you!');
+			}
+            
+		</script>
+	</body>
+</html>
